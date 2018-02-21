@@ -1,0 +1,17 @@
+/* ===================================================================
+ * fonts.scss)
+ *
+ * ------------------------------------------------------------------- */
+ 
+/*
+ * Peace Sans
+================================================================================ */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+@font-face {
+    font-family: 'peacesans-regular';
+    src: url('/fonts/peace_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
