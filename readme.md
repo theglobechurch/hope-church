@@ -2,6 +2,13 @@
 
 This is site is based on Infinity template (CC-BY-3.0 details below). Everything was a bit rushed to get things together, so corners have been cut and good practices ignored. Optimistically someone will go back and rebuild this / throw away and start again.
 
+## Dev:
+
+Simple server included:
+
+`npm install`
+`npm run dev`
+
 ## Template:
 
 LICENSE:
