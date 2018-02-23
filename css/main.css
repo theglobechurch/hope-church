@@ -1301,10 +1301,10 @@ header .header-logo a {
   transition: all 0.3s ease-in-out;
 }
 #header-menu-trigger.opaque {
-  background-color: #000000;
+  background-color: #0e48b0;
 }
 #header-menu-trigger.opaque .header-menu-text {
-  background-color: #000000;
+  background-color: #0e48b0;
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
   color: #FFFFFF;
@@ -1353,7 +1353,8 @@ header .header-logo a {
  * off-canvas menu - (_layout.scss) 
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
-  background: #0C0C0C;
+  background: #0e48b0;
+  border-left: 10px solid #d1434b;
   color: rgba(255, 255, 255, 0.25);
   font-size: 1.5rem;
   line-height: 1.6;
@@ -1385,10 +1386,11 @@ header .header-logo a {
 }
 #menu-nav-wrap h3 {
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "peacesans-regular", serif;
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 #menu-nav-wrap .nav-list {
   font-family: "Raleway", sans-serif;
