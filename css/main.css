@@ -1491,6 +1491,12 @@ header .header-logo a {
  * responsive:
  * header section 
  * ------------------------------------------------------------------- */
+ @media only screen and (max-width: 400px) {
+  header .header-logo {
+    display: none;
+  }
+ }
+
 @media only screen and (max-width: 768px) {
   header .header-logo {
     left: auto;
