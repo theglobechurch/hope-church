@@ -2082,7 +2082,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #portfolio .col-twelve {
-  background: #fefeffcc;
+  background: rgba(254, 254, 255, 0.8);
   padding: 18px;
 }
 
