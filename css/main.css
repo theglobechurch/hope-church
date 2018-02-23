@@ -1615,6 +1615,10 @@ header .header-logo a {
   margin: 0;
 }
 
+#home .vauxhall {
+  color: #ffea02;
+}
+
 #home .replacement-hope {
   display: block;
   margin: 0 auto;
