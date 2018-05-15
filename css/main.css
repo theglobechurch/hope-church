@@ -1874,6 +1874,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   transition: all 0.5s ease-in-out;
 }
 
+button.stroke, .button.stroke {
+  border-color: #fffefe;
+  color: #fffefe;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about 
