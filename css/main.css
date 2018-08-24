@@ -63,7 +63,7 @@ html, body {
 }
 
 body {
-  background: #ff4e57;
+  background: #fe3041;
   font-family: "Raleway", serif;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -76,7 +76,7 @@ body {
  * links - (_document-setup) 
  * ------------------------------------------------------------------- */
 a, a:visited {
-  color: #ff4e57;
+  color: #fe3041;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -85,7 +85,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-  color: #0e48b0;
+  color: #0e0bbe;
 }
 
 
@@ -493,7 +493,7 @@ td:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff4e57;
+  background: #fe3041;
   z-index: 800;
   height: 100%;
   width: 100%;
@@ -1301,10 +1301,10 @@ header .header-logo a {
   transition: all 0.3s ease-in-out;
 }
 #header-menu-trigger.opaque {
-  background-color: #0e48b0;
+  background-color: #0e0bbe;
 }
 #header-menu-trigger.opaque .header-menu-text {
-  background-color: #0e48b0;
+  background-color: #0e0bbe;
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
   color: #FFFFFF;
@@ -1353,7 +1353,7 @@ header .header-logo a {
  * off-canvas menu - (_layout.scss) 
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
-  background: #0e48b0;
+  background: #0e0bbe;
   border-left: 10px solid #d1434b;
   color: rgba(255, 255, 255, 0.25);
   font-size: 1.5rem;
@@ -1523,7 +1523,7 @@ header .header-logo a {
 #home {
   width: 100%;
   height: 100%;
-  background-color: #ff4d55;
+  background-color: #fe3041;
   min-height: 804px;
   position: relative;
 }
@@ -1817,7 +1817,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #about {
   position: relative;
   padding: 4.2rem 0 12rem;
-  background-color: #0e48b0;
+  background-color: #0e0bbe;
   min-height: 696px;
   text-align: center;
 }
@@ -1951,7 +1951,7 @@ button.stroke, .button.stroke {
  *
  * ------------------------------------------------------------------- */
 #services {
-  background: #fcea69;
+  background: #ffeb4c;
   min-height: 800px;
   position: relative;
   padding: 15rem 0 1rem;
@@ -2315,7 +2315,7 @@ button.stroke, .button.stroke {
  *
  * ------------------------------------------------------------------- */
 #testimonials {
-  background: #ff4e55;
+  background: #fe3041;
   padding: 12rem 0 7.8rem;
   text-align: center;
   color: #ffffff;
@@ -2324,7 +2324,7 @@ button.stroke, .button.stroke {
   font-family: "peacesans-regular", serif;
   font-size: 4.8rem;
   line-height: 1.667;
-  color: #fcea69;
+  color: #ffeb4c;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
@@ -2390,7 +2390,7 @@ button.stroke, .button.stroke {
   line-height: 1.313;
   letter-spacing: 0;
   text-transform: none;
-  color: #fcea69;
+  color: #ffeb4c;
   margin-top: .3rem;
 }
 
