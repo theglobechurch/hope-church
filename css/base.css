@@ -773,3 +773,7 @@ textarea {
   margin-right: auto;
   text-align: center;
 }
+
+.nobr {
+  white-space: nowrap;
+}
