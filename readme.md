@@ -1,5 +1,7 @@
 # Hope Church Vauxhall
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4057c1e9-f680-49d5-a1df-fae5bd2c157f/deploy-status)](https://app.netlify.com/sites/hope-vauxhall/deploys)
+
 This is site is based on Infinity template (CC-BY-3.0 details below). Everything was a bit rushed to get things together, so corners have been cut and good practices ignored. Optimistically someone will go back and rebuild this / throw away and start again.
 
 ## Dev:
