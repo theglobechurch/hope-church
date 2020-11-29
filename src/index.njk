@@ -87,13 +87,16 @@ eleventyExcludeFromCollections: true
 		<div class="col-six tab-full">
 			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro mb-4" data-animate="fadeInRight"/>
 
-			<div class="more animate-intro pull-right">
-				<a class="smoothscroll button stroke" href="#vision">
-					The Vision
-				</a>
-				<a class="smoothscroll button stroke" href="#weekschedule">
-					What's Going On
-				</a>
+			{% if s.data.nextStep %}
+				<div class="more animate-intro pull-right">
+					{% for step in s.data.nextStep %}
+						<a class="smoothscroll button stroke" href="{{ step.link }}">
+							{{ step.title }}
+						</a>
+					{% endfor %}
+				</div>
+			{% endif %}
+
 			</div>
 		</div>
 	</div>
@@ -113,7 +116,7 @@ eleventyExcludeFromCollections: true
 	<div class="row about-wrap">
 		<div class="col-full">
 			<div class="intro">
-				<h1 class="lead animate-this big-title big-title--white">Sundays at Hope</span></h1>
+				<h1 class="lead animate-this big-title big-title--white">{{ s.data.title }}</h1>
 			</div>
 		</div>
 	</div>
@@ -138,11 +141,16 @@ eleventyExcludeFromCollections: true
 
 			{{ s.templateContent | safe }}
 
+			{% if s.data.nextStep %}
 			<div class="more animate-intro">
-				<a class="smoothscroll button stroke" href="#weekschedule">
-					Rest of the Week
-				</a>
+				{% for step in s.data.nextStep %}
+					<a class="smoothscroll button stroke" href="{{ step.link }}">
+						{{ step.title }}
+					</a>
+				{% endfor %}
 			</div>
+			{% endif %}
+
 		</div>
 
 	</div>

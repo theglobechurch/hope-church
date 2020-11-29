@@ -2,6 +2,11 @@
 title: Welcome
 navtitle: Welcome
 leadimage: /static/images/hope-church-vauxhall-people.jpg
+nextStep:
+  - title: The vision
+    link: "#vision"
+  - title: What's On
+    link: "#weekschedule"
 ---
 
 Although we meet in a place, Hope Church is really a group of people - a family devoted to God, to each other and to Vauxhall.
