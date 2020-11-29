@@ -306,7 +306,7 @@ eleventyExcludeFromCollections: true
 
 					{% if person.data.photo %}
 					<span class="icon">
-						<img src="{{ person.data.photo }}" alt="{{ person.data.name }}" class="mx-auto" />
+						<img src="{{ person.data.photo | replace('.jpg', '-sq-250.jpg')  }}" alt="{{ person.data.name }}" class="mx-auto" />
 					</span>
 					{% endif %}
 

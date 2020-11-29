@@ -14,8 +14,11 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    // TODO: clean up this clutter
-    "./src/static": "./static",
+    "./src/static/favicon.ico": "./favicon.ico",
+    "./src/static/css": "./static/css",
+    "./src/static/images/*.svg": "./static/images",
+    "./src/static/fonts": "./static/fonts",
+    "./src/static/js": "./static/js",
     "./_tmp/static/css/style.css": "./static/css/style.css",
   });
 
@@ -28,9 +31,6 @@ module.exports = function (eleventyConfig) {
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
-
-  // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
