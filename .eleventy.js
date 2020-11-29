@@ -1,4 +1,5 @@
 const collections = require("./utils/collections.js");
+const filters = require("./utils/filters.js");
 
 module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
@@ -21,6 +22,11 @@ module.exports = function (eleventyConfig) {
   // Collections
   Object.keys(collections).forEach((collectionName) => {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
+  });
+
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
   // Copy Image Folder to /_site

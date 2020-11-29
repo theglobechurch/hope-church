@@ -251,111 +251,34 @@ eleventyExcludeFromCollections: true
 
 				<p>Hope Church is open Monday – Friday between 9am and 5pm, do drop in! We host specific events <span class="nobr">throughout the week.</span></p>
 
-				<div class="table-responsive hope-diary">
+				<div class="divide-y hope-diary">
+					{% for day in ['Sunday', 'Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'] %}
+						<div class="grid sm:grid-cols-3 py-4 gap-4">
+							<div>
+								<h2>{{ day }}</h2>
+							</div>
+							<div class="sm:col-span-2 divide-y text-left">
+								{% for event in collections.activities|activityByDay(day) %}
+									<div>
+										<h3>{{ event.data.title }}</h3>
+										<p>{{ event.data.time|safe }}</p>
+										{% if event.data.shortDesc %}
+											<p><em>{{ event.data.shortDesc }}</em></p>
+										{% endif %}
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
 
-					<table>
-						<tbody>
-							<tr>
-								<td><h2>Sunday</h2></td>
-								<td>
-									<h3>Hope Church Sunday Gathering</h3>
-									<p>11am</p>
-								</td>
-							</tr>
-							<tr>
-								<td><h2>Monday</h2></td>
-								<td>
-									<h3>Goals to Glory</h3>
-									<p>
-										5.30pm – 6.30pm (Boys and girls, aged 6-15)<br />
-										7.00pm – 8.00pm (Boys, aged 16+)<br />
-										<em>A football session for all abilities. Meet at Vauxhall Primary School Pitch entrance on Tyers Terrace</em>
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td rowspan="2"><h2>Tuesday</h2></td>
-								<td>
-									<h3>Little Stars</h3>
-									<p>
-										10.30am – 12.30pm (0–4 year olds)<br />
-										<em>A toddler group with toys, songs and Bible stories</em>
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h3>Impact</h3>
-									<p>
-										4.15pm – 5.45pm (Boys and girls, years 1–6)<br />
-										<em>A Youth Group with games, food and Bible</em>
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td rowspan="3"><h2>Wednesday</h2></td>
-								<td>
-									<h3>Breakfast Club</h3>
-									<p>11.30pm – 1.30pm</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h3>Vauxhall Food Bank</h3>
-									<p>11.30pm – 1.30pm</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h3>Women's Craft Evening</h3>
-									<p>
-										6.30pm – 9.30pm<br />
-										<em>2nd Wednesday of the month only</em>
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h2>Thursday</h2>
-								</td>
-								<td>
-									<p>Centre open</p>
-								</td>
-							</tr>
-							<tr>
-								<td rowspan="3">
-									<h2>Friday</h2>
-								</td>
-								<td>
-									<h3>Women's Bible and Breakfast</h3>
-									<p>10.30am – 12.00pm</p>
-								</td>
-							</tr>
+				<p>All events take place at Hope Church, 105 Tyers Street, Vauxhall, SE11 5HS.</p>
+				<p>For more information drop in or call <a href="tel:02075 822 618">02075 822 618</a>.</p>
 
-							<tr>
-								<td>
-									<h3>Lunch and Bible Study</h3>
-									<p>1.00pm – 2.30pm</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h3>Boys Youth Club</h3>
-									<p>4.15pm – 6.15pm (year 7–11)</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-
-					<p>All events take place at Hope Church, 105 Tyers Street, Vauxhall, SE11 5HS.</p>
-					<p>For more information drop in or call <a href="tel:02075 822 618">02075 822 618</a>.</p>
-
-					<div class="more">
-						<a class="button stroke stroke--red" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
-							Find Hope on a Map
-						</a>
-					</div>
+				<div class="more">
+					<a class="button stroke stroke--red" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
+						Find Hope on a Map
+					</a>
 				</div>
 
 			</div>
@@ -378,23 +301,22 @@ eleventyExcludeFromCollections: true
 
 		<div class="services-list block-1-2 block-tab-full group">
 
-
-			{% for post in collections.people %}
+			{% for person in collections.people %}
 				<div class="bgrid service-item animate-this fadeInUp animated">
 
-					{% if post.data.photo %}
+					{% if person.data.photo %}
 					<span class="icon">
-						<img src="{{ post.data.photo }}" alt="{{ post.data.name }}" class="mx-auto" />
+						<img src="{{ person.data.photo }}" alt="{{ person.data.name }}" class="mx-auto" />
 					</span>
 					{% endif %}
 
 					<div class="service-content">
 						<h3 class="h05">
-							{{ post.data.name }}
+							{{ person.data.name }}
 						</h3>
 
 						<p>
-							{{ post.data.shortBio }}
+							{{ person.data.shortBio }}
 						</p>
 					</div>
 

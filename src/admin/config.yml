@@ -26,10 +26,42 @@ collections:
       - { label: "Photo", name: "photo", widget: "image", required: false }
       - { label: "Short Bio", name: "shortBio", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: "Activities"
+    name: "activities"
+    folder: "src/activities"
+    identifier_field: title
+    create: true
+    slug: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Time", name: "time", widget: "string" }
+      - {
+          label: "Short Description",
+          name: "shortDesc",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Day",
+          name: "day",
+          widget: "select",
+          options:
+            [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "settings"
     label: "Settings"
     extension: json
-
     editor:
       preview: false
     files:
