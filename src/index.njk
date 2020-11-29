@@ -65,6 +65,7 @@ eleventyExcludeFromCollections: true
 <!-- about
 	================================================== -->
 <section id="about" class="hope-section hope-section--welcome">
+	{% set s = collections.sections|findBySlug('welcome') %}
 
 	<div class="row about-wrap">
 		<div class="col-full">
@@ -80,14 +81,11 @@ eleventyExcludeFromCollections: true
 
 	<div class="row">
 		<div class="col-six main-text tab-full">
-			<p>Although we meet in a place, Hope Church is really a group of people - a family devoted to God, to each other and to Vauxhall.</p>
-			<p>Whatever your background and whatever your story, the good news about Jesus is the only thing that can bring real hope. That’s why we love telling people about Jesus and keeping him central in everything we do.</p>
-			<p>We want Hope Church to be a place where people of all ages and from all backgrounds can come together and hear the life-changing, hope-bringing message of Jesus.</p>
-			<p>Come and join us.</p>
+			{{ s.templateContent | safe }}
 		</div>
 
 		<div class="col-six tab-full">
-			<img src="/static/images/hope-church-vauxhall-people.jpg" alt="Hope Church Vauxhall" class="animate-intro mb-4" data-animate="fadeInRight"/>
+			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro mb-4" data-animate="fadeInRight"/>
 
 			<div class="more animate-intro pull-right">
 				<a class="smoothscroll button stroke" href="#vision">
@@ -110,6 +108,8 @@ eleventyExcludeFromCollections: true
 	================================================== -->
 <section id="sunday" class="hope-section hope-section--sunday">
 
+	{% set s = collections.sections|findBySlug('sundays') %}
+
 	<div class="row about-wrap">
 		<div class="col-full">
 			<div class="intro">
@@ -126,7 +126,7 @@ eleventyExcludeFromCollections: true
 				<li>11am at Hope Church</li>
 				<li>105 Tyers Street, Vauxhall, SE11 5HS</li>
 			</ul>
-			<img src="/static/images/map.svg" alt="Map of Vauxhall. Hope Church 105 Tyers Street, Vauxhall" class="animate-intro map mb-4" data-animate="fadeInLeft"/>
+			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro map mb-4" data-animate="fadeInLeft"/>
 			<div class="more animate-intro">
 				<a class="button stroke" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
 					Go to Map
@@ -135,9 +135,9 @@ eleventyExcludeFromCollections: true
 		</div>
 
 		<div class="col-six main-text tab-full">
-			<p>Everyone is welcome on Sundays – you don’t need to be a ‘good’ or ‘churchy’ person and you don’t need to wear anything special.</p>
-			<p>On Sundays we will always open the Bible and hear God speak to us through his word. We will talk a lot about Jesus – because we believe he is the real hope for Vauxhall. We will sing songs that praise God and we will talk to Him in prayer. We also love sharing food together and so we end our Sundays with a meal.</p>
-			<p>Our Sundays are family friendly and we have a children’s group for primary school age children during the service.</p>
+
+			{{ s.templateContent | safe }}
+
 			<div class="more animate-intro">
 				<a class="smoothscroll button stroke" href="#weekschedule">
 					Rest of the Week
@@ -156,40 +156,18 @@ eleventyExcludeFromCollections: true
 <!-- about
 	================================================== -->
 <section id="vision" class="vision">
+	{% set s = collections.sections|findBySlug('vision') %}
 
-	<div class="row narrow section-intro with-bottom-sep animate-this">
-		<div class="col-full">
+	<div class="row narrow section-intro with-bottom-sep animate-this text-black">
 
-			<div class="intro">
-				<h3 class="animate-this">This is what matters</h3>
-			</div>
 
-			<h1>Jesus</h1>
+		<div class="intro">
+			<h3 class="animate-this">{{ s.data.title }}</h3>
+		</div>
 
-			<p class="lead">As a church we want to be all about Jesus. We believe that the whole of the Bible is about him, that
-				he is the centre of all things, and that he is the hope of the world.</p>
+		{{ s.templateContent | safe }}
 
-		</div> <!-- end col-full -->
-		<div class="col-full">
-
-			<h1>the message of hope</h1>
-
-			<p class="lead">Hope is not an idea or a desire, it is not wishful thinking or finger-crossing. Real hope is absolute
-				confidence that what God has promised will come true because of Jesus. Hope is a person. Hope is Jesus. It is this message
-				of hope that we want to proclaim.</p>
-
-		</div> <!-- end col-full -->
-		<div class="col-full">
-
-			<h1>in the heart of Vauxhall</h1>
-
-			<p class="lead">We are passionate about Vauxhall. As we plant Hope Church in the heart of the place, we pray that the
-				message of hope will be planted in the hearts of the people.</p>
-
-		</div> <!-- end col-full -->
 	</div> <!-- end row -->
-
-
 
 </section> <!-- end services -->
 

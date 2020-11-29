@@ -26,6 +26,26 @@ collections:
       - { label: "Photo", name: "photo", widget: "image", required: false }
       - { label: "Short Bio", name: "shortBio", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - label: "Sections"
+    name: "sections"
+    folder: "src/sections"
+    identifier_field: navtitle
+    create: true
+    slug: "{{navtitle}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Nav Title", name: "navtitle", widget: "string" }
+      - {
+          label: "Lead Image",
+          name: "leadimage",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - label: "Activities"
     name: "activities"
     folder: "src/activities"
