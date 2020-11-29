@@ -1303,9 +1303,9 @@ header .row {
  * header logo - (_layout.css)
  * ------------------------------------------------------------------- */
 header .header-logo {
-  position: absolute;
+  /* position: absolute;
   left: 32px;
-  top: 42px;
+  top: 42px; */
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
