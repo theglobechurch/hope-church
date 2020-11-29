@@ -128,7 +128,7 @@ eleventyExcludeFromCollections: true
 		</div>
 
 		<div class="col-six tab-full">
-			<img src="/static/images/hope-church-vauxhall-people.jpg" alt="Hope Church Vauxhall" class="animate-intro" data-animate="fadeInRight"/>
+			<img src="/static/images/hope-church-vauxhall-people.jpg" alt="Hope Church Vauxhall" class="animate-intro mb-4" data-animate="fadeInRight"/>
 
 			<div class="more animate-intro pull-right">
 				<a class="smoothscroll button stroke" href="#vision">
@@ -167,7 +167,7 @@ eleventyExcludeFromCollections: true
 				<li>11am at Hope Church</li>
 				<li>105 Tyers Street, Vauxhall, SE11 5HS</li>
 			</ul>
-			<img src="/static/images/map.svg" alt="Map of Vauxhall. Hope Church 105 Tyers Street, Vauxhall" class="animate-intro map" data-animate="fadeInLeft"/>
+			<img src="/static/images/map.svg" alt="Map of Vauxhall. Hope Church 105 Tyers Street, Vauxhall" class="animate-intro map mb-4" data-animate="fadeInLeft"/>
 			<div class="more animate-intro">
 				<a class="button stroke" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
 					Go to Map
@@ -378,130 +378,28 @@ eleventyExcludeFromCollections: true
 
 		<div class="services-list block-1-2 block-tab-full group">
 
-			<div class="bgrid service-item animate-this fadeInUp animated">
 
-				<span class="icon"><img src="/static/images/avatars/sam.jpg" alt="Sam Gibb"></span>
+			{% for post in collections.people %}
+				<div class="bgrid service-item animate-this fadeInUp animated">
 
-				<div class="service-content">
-					<h3 class="h05">Sam Gibb</h3>
+					{% if post.data.photo %}
+					<span class="icon">
+						<img src="{{ post.data.photo }}" alt="{{ post.data.name }}" class="mx-auto" />
+					</span>
+					{% endif %}
 
-					<p>Sam is the Pastor and Church planter of Hope Church Vauxhall. He was born in South London, moved to the Midlands, fell in
-					love with a northerner (his now wife Charlie) and has ended up back in South London. Sam loves teaching the Bible and telling
-					<span class="nobr">people about Jesus.</span></p>
+					<div class="service-content">
+						<h3 class="h05">
+							{{ post.data.name }}
+						</h3>
+
+						<p>
+							{{ post.data.shortBio }}
+						</p>
+					</div>
+
 				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<span class="icon"><img src="/static/images/avatars/kev.jpg" alt="Kev Croft"></span>
-
-				<div class="service-content">
-					<h3 class="h05">Kevin Croft</h3>
-
-					<p>Kev is one of the Elders at Hope Church Vauxhall and the London City Mission Team Leader. He’s a proper South Londoner, a
-					long-suffering Millwall Fan and loves telling people about Jesus. Kev is married to Rebecca and they <span class="nobr">have two children.</span>
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!--<span class="icon"><img src="images/avatars/jenn.jpg" alt="Jenn Garibay"></span>-->
-
-				<div class="service-content">
-					<h3 class="h05">Jenn Garibay</h3>
-
-					<p>Jenn has been working in Vauxhall for over 2 years. Jenn heads up the ministry to local women and young girls,
-					something she is passionate about. She can often be seen out in the community with her partner in crime Buxton - her <span class="nobr">much
-					loved dog.</span>
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!-- <span class="icon"><img src="images/avatars/shane.jpg" alt="Shane Goodyear"></span> -->
-
-				<div class="service-content">
-					<h3 class="h05">Shane Goodyear</h3>
-
-					<p>Shane was brought up on a council estate in South London and became a Christian after a colleague refused
-					to stop talking to him about Jesus. Shane looks after our Football project and our youth group for teenage boys. He is married
-					to Jaz and they have a young son. For some reason <span class="nobr">he supports Arsenal.</span>
-
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<!--<div class="bgrid service-item animate-this fadeInUp animated">
-				<div class="service-content">
-					<h3 class="h05">Sydney Emory</h3>
-
-					<p>Sydney left sunny California to spend a year in not-so-sunny London. Sydney is a passionate sportsperson with
-					a competitive streak. She looks after the running of Impact - our primary <span class="nobr">school aged group.</span>
-					</p>
-				</div>
-			</div>--> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!--<span class="icon"><img src="images/avatars/jaz.jpg" alt="Jaz Goodyear"></span>-->
-
-				<div class="service-content">
-
-					<h3 class="h05">Jaz Goodyear</h3>
-
-					<p>Jaz joined the team in early 2018. She ensures the smooth running of the centre, keeping on top of a mountain of tasks so that we can keep our doors open to the local community. She is married to Shane and they <span class="nobr">have a young son.</br >
-
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!--<span class="icon"><img src="images/avatars/derick.jpg" alt="Derick Green"></span>-->
-
-				<div class="service-content">
-					<h3 class="h05">Derick Green</h3>
-
-					<p>Derick is the longest serving member of the team. Over the years he has built up many great relationships with local people. He is often out in the community meeting people <span class="nobr">in their own homes.</span>
-
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!--<span class="icon"><img src="images/avatars/derick.jpg" alt="Stanley George"></span>-->
-
-				<div class="service-content">
-					<h3 class="h05">Stanley George</h3>
-
-					<p>Stanley joined the Hope Church team in October 2018 after arriving in London from Nigeria. He loves telling people about Jesus and wishes that people in London <span class="nobr">smiled more!</span>
-
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
-
-			<div class="bgrid service-item animate-this fadeInUp animated">
-
-				<!--<span class="icon"><img src="images/avatars/dorina.jpg" alt="Dorina Stewart"></span>-->
-
-				<div class="service-content">
-					<h3 class="h05">Dorina Stewart</h3>
-
-					<p>Originally from Romania, Dorina has lived in London for nearly 20 years. Dorina looks after the running of our kitchen providing much needed meals for local people. She also meets up with people in their own homes <span class="nobr">in the community.</span>
-					</p>
-				</div>
-
-			</div> <!-- end bgrid -->
+			{% endfor %}
 
 		</div>
 
@@ -528,10 +426,13 @@ eleventyExcludeFromCollections: true
 						/>Modified Infinity Template by <a href="http://www.styleshout.com/">styleshout</a></span>
 				</div>
 				<ul class="hope-aff">
-					<li><a href="https://www.lcm.org.uk/" target="_blank"><img src="/static/images/logos/lcm.svg" alt="London City Mission" /></a></li>
-					<li><a href="https://fiec.org.uk/" target="_blank"><img src="/static/images/logos/fiec.svg" alt="Fellowship of Independent Evangelical Churches" /></a></li>
-					<li><a href="https://co-mission.org/" target="_blank"><img src="/static/images/logos/comission.svg" alt="Co-Mission" /></a></li>
-					<li><a href="https://www.globe.church" target="_blank"><img src="/static/images/logos/globe.svg" alt="The Globe Church" /></a></li>
+					{% for partner in partners.partners %}
+						<li>
+							<a href="{{ partner.url }}" target="_blank">
+								<img src="{{ partner.img }}" alt="{{ partner.title }}" />
+							</a>
+						</li>
+					{% endfor %}
 				</ul>
 			</div>
 

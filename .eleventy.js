@@ -1,3 +1,5 @@
+const collections = require("./utils/collections.js");
+
 module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
@@ -14,6 +16,11 @@ module.exports = function (eleventyConfig) {
     // TODO: clean up this clutter
     "./src/static": "./static",
     "./_tmp/static/css/style.css": "./static/css/style.css",
+  });
+
+  // Collections
+  Object.keys(collections).forEach((collectionName) => {
+    eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
 
   // Copy Image Folder to /_site
