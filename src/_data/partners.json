@@ -1,0 +1,24 @@
+{
+  "partners": [
+    {
+      "title": "London City Mission",
+      "url": "https://lcm.org.uk",
+      "img": "/static/images/lcm.svg"
+    },
+    {
+      "title": "Fellowship of Independent Evangelical Churches",
+      "url": "https://fiec.org.uk",
+      "img": "/static/images/fiec.svg"
+    },
+    {
+      "title": "Co-Mission",
+      "url": "https://co-mission.org/",
+      "img": "/static/images/comission.svg"
+    },
+    {
+      "title": "The Globe Church",
+      "url": "https://www.globe.church",
+      "img": "/static/images/globe.svg"
+    }
+  ]
+}

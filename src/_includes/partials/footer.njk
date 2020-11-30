@@ -1,0 +1,23 @@
+<footer class="mt-12 text-center">
+
+  <div>
+    Hope Church Vauxhall &middot; 105 Tyers St, Lambeth, London<br />
+    Questions? Email us: info@hopevauxhall.co.uk<br />
+    Modified Infinity Template by <a href="http://www.styleshout.com/">styleshout</a>
+  </div>
+
+  <div class="flex justify-center items-center py-8">
+  {% for partner in partners.partners %}
+    <a href="{{ partner.url }}" target="_blank" class="block mx-4" title="{{ partner.title }}">
+      <img src="{{ partner.img }}" alt="{{ partner.title }}" style="max-height: 60px; max-width: 100px; min-width: 60px;" />
+    </a>
+  {% endfor %}
+  </div>
+
+  <div id="go-top" aria-hidden="true">
+    <a class="smoothscroll" title="Back to Top" href="#top">
+      <i class="fa fa-long-arrow-up"></i>
+    </a>
+  </div>
+
+</footer>
