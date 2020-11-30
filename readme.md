@@ -11,6 +11,14 @@ Simple server included:
 `npm install`
 `npm run dev`
 
+To use the Netlify CMS in development you'll also need to run:
+
+`npx netlify-cms-proxy-server`
+
+## Production
+
+`npm run production`
+
 ## Template:
 
 LICENSE:
