@@ -1,0 +1,58 @@
+<section id="weekschedule" class="hope-section weekschedule">
+
+	<div class="intro-wrap">
+
+		<div class="row narrow with-bottom-sep animate-this">
+			<div class="col-twelve">
+
+				<div class="intro">
+					<h3 class="animate-this fadeInUp animated line-before micro-title">Diary</h3>
+				</div>
+
+				{% if collections.events|length > 0 %}
+				<div class="bg-yellow-300 p-4 text-black mb-4">
+					On {{ collections.events[0].data.date|readableDate }} we're hosting <strong>{{ collections.events[0].data.title }}</strong>… Find out more about this, and all special events, on the <a href="/events">events page</a>.
+				</div>
+				{% endif %}
+
+				<h1 class="big-title">The weekly schedule…</h1>
+
+				<p>Hope Church is open Monday – Friday between 9am and 5pm, do drop in!</p>
+				<p>We host specific events <span class="nobr">throughout the week.</span></p>
+
+				<div class="divide-y hope-diary">
+					{% for day in ['Sunday', 'Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'] %}
+						<div class="grid sm:grid-cols-3 py-4 gap-4">
+							<div>
+								<h2>{{ day }}</h2>
+							</div>
+							<div class="sm:col-span-2 divide-y text-left">
+								{% for event in collections.activities|activityByDay(day) %}
+									<div>
+										<h3>{{ event.data.title }}</h3>
+										<p>{{ event.data.time|safe }}</p>
+										{% if event.data.shortDesc %}
+											<p><em>{{ event.data.shortDesc }}</em></p>
+										{% endif %}
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+
+				<p>All events take place at Hope Church, 105 Tyers Street, Vauxhall, SE11 5HS.</p>
+				<p>For more information drop in or call <a href="tel:02075 822 618">02075 822 618</a>.</p>
+
+				<div class="more">
+					<a class="button stroke stroke--red" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
+						Find Hope on a Map
+					</a>
+				</div>
+
+			</div>
+		</div> <!-- end row section-intro -->
+
+	</div> <!-- end intro-wrap -->
+
+</section>

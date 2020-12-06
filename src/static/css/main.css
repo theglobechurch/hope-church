@@ -1332,10 +1332,16 @@ header .header-logo a {
   transition: all 0.5s ease-in-out;
 }
 
+header .header-logo a.red-black {
+  background: url(/static/images/logo-red-black.svg) no-repeat center;
+  background-size: cover;
+}
+
 /* -------------------------------------------------------------------
  * menu trigger - (_layout.css)
  * ------------------------------------------------------------------- */
-#header-menu-trigger {
+#header-menu-trigger,
+.header_nav {
   display: block;
   position: fixed;
   right: 32px;
@@ -1354,17 +1360,22 @@ header .header-logo a {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.header_nav.opaque,
 #header-menu-trigger.opaque {
   background-color: #0e0bbe;
 }
+.header_nav.opaque .header-menu-text,
 #header-menu-trigger.opaque .header-menu-text {
   background-color: #0e0bbe;
 }
 #header-menu-trigger:hover,
-#header-menu-trigger:focus {
+#header-menu-trigger:focus,
+.header_nav:hover,
+.header_nav:focus {
   color: #ffffff;
 }
-#header-menu-trigger .header-menu-text {
+#header-menu-trigger .header-menu-text,
+.header_nav .header-menu-text {
   display: block;
   position: absolute;
   top: 0;
@@ -1378,6 +1389,7 @@ header .header-logo a {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.header_nav .header-menu-icon,
 #header-menu-trigger .header-menu-icon {
   display: block;
   height: 3px;
@@ -1388,6 +1400,8 @@ header .header-logo a {
   right: 9px;
   margin-top: -1.5px;
 }
+.header_nav .header-menu-icon::before,
+.header_nav .header-menu-icon::after,
 #header-menu-trigger .header-menu-icon::before,
 #header-menu-trigger .header-menu-icon::after {
   content: "";
@@ -1397,9 +1411,11 @@ header .header-logo a {
   position: absolute;
   left: 0;
 }
+.header_nav .header-menu-icon::before,
 #header-menu-trigger .header-menu-icon::before {
   top: -9px;
 }
+.header_nav .header-menu-icon::after,
 #header-menu-trigger .header-menu-icon::after {
   bottom: -9px;
 }
@@ -1951,7 +1967,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   min-height: 800px;
   position: relative;
   padding: 15rem 0 1rem;
-  color: rgba(255, 255, 255, 0.3);
+  /* color: rgba(255, 255, 255, 0.3); */
 }
 #vision .section-intro h3 {
   color: black;

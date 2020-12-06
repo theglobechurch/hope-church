@@ -1,0 +1,56 @@
+---
+layout: default
+eleventyExcludeFromCollections: true
+---
+
+<header>
+
+  <div class="header-logo p-12">
+    <a class="red-black" href="/">
+      Hope Church Vauxhall
+    </a>
+  </div>
+
+  <a class="header_nav" href="/">
+    <span class="header-menu-text">Home</span>
+    <span class="header-menu-icon"></span>
+  </a>
+
+</header>
+
+<section class="vision hope-section min-h-screen bg-yellow-300 text-black">
+  <div class="intro-wrap">
+
+    <div class="row narrow with-bottom-sep animate-this">
+      <div class="col-twelve">
+
+        <div class="section-intro">
+          <h1 class="animate-this big-title fadeInUp animated text-black">Special events at Hope&nbsp;Church…</h1>
+        </div>
+
+        <div class="divide-y">
+          {% for event in collections.events %}
+            <div class="p-4 grid grid-cols-3 gap-4">
+              <div class="col-span-2 text-left">
+                <h2 class="text-white text-5xl font-bold mb-2 text-black">{{ event.data.title }}</h2>
+                <time datetime="{{ event.data.date }}" class="font-bold text-black">{{ event.data.date|readableDateTime }}</time>
+                <p class="mb-0 text-black">{{ event.data.shortDesc }}</p>
+              </div>
+
+              <div class="flex items-center justify-end">
+              {% if event.data.link %}
+                <a href="{{ event.data.link }}" class="text-white border-black border-2 p-4 text-center">Find out more</a>
+              {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'partials/schedule.njk' %}
+
+{% include 'partials/footer.njk' %}

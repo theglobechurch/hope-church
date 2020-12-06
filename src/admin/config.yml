@@ -27,6 +27,22 @@ collections:
       - { label: "Short Bio", name: "shortBio", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
 
+  - label: "Events"
+    name: "events"
+    folder: "src/events"
+    identifier_field: title
+    create: true
+    slug: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Location", name: "location", widget: "text", default: "Hope Church,\n105 Tyers Street,\nVauxhall,\nSE11 5HS"}
+      - { label: "Date and Time", name: "date", widget: "datetime" }
+      - { label: "Short Description", name: "shortDesc", widget: "string" }
+      - { label: "External link", name: "link", widget: "string", required: false, hint: 'Make sure you start with an https://…'}
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
   - label: "Sections"
     name: "sections"
     folder: "src/sections"
