@@ -4,7 +4,7 @@ navtitle: Sundays
 leadimage: /static/images/map.svg
 nextStep:
   - title: Join us for Hope Church Live
-    link: www.facebook.com/vauxhall105/live
+    link: https://www.facebook.com/vauxhall105/live/
   - title: Rest of the week
     link: "#weekschedule"
 ---
