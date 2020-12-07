@@ -5,6 +5,8 @@ leadimage: /static/images/map.svg
 nextStep:
   - title: Rest of the week
     link: "#weekschedule"
+  - title: Join us for Hope Church Live
+    link: www.facebook.com/vauxhall105/live
 ---
 ![](/static/images/we-are-back.jpg)
 
