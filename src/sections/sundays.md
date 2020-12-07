@@ -1,7 +1,7 @@
 ---
 title: Sundays at Hope
 navtitle: Sundays
-leadimage: /static/images/map.svg
+leadimage: /static/images/hope-map.001.jpeg
 nextStep:
   - title: Join us for Hope Church Live
     link: https://www.facebook.com/vauxhall105/live/
