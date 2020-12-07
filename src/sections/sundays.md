@@ -6,6 +6,7 @@ nextStep:
   - title: Rest of the week
     link: "#weekschedule"
 ---
+![](/static/images/we-are-back.jpg)
 
 **Everyone is welcome on Sundays – you don’t need to be a ‘good’ or ‘churchy’ person and you don’t need to wear anything special.**
 
