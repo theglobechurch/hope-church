@@ -1,5 +1,5 @@
 ---
 title: Boys Youth Club
-time: 4.15pm – 6.15pm (year 7–11)
+time: "5:30-7pm and 7:30-9pm "
 day: Friday
 ---
