@@ -7,3 +7,4 @@ shortBio: Sam is the Pastor and Church planter of Hope Church Vauxhall. He was
   the Bible and telling people about Jesus.
 sortOrder: 0
 ---
+[sam@hopevauxhall.co.uk](sam@hopevauxhall.co.uk)
