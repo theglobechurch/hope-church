@@ -1,7 +1,7 @@
 ---
 title: Welcome
 navtitle: Welcome
-leadimage: /static/images/hope-church-vauxhall-people.jpg
+leadimage: /static/images/hope-family.jpg
 nextStep:
   - title: The vision
     link: "#vision"
