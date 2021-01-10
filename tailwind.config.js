@@ -3,6 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      white: {
+        pure: '#ffffff',
+        DEFAULT: '#fefff6'
+      },
+      black: {
+        DEFAULT: '#111827',
+      },
       yellow: {
         '50':  '#f9f7ea',
         '100': '#f9f3c6',
@@ -16,9 +23,13 @@ module.exports = {
         '900': '#5e390e',
       },
     },
+    fontFamily: {
+      sans: ['Raleway', 'serif'],
+      title: ['peacesans-regular', 'serif'],
+    },
     extend: {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 };

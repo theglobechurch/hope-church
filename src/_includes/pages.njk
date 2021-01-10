@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<header class="p-8 relative">
+  <div class="header-logo">
+    <a href="/">
+      Hope Church Vauxhall
+    </a>
+  </div>
+</header>
+
+<div class="mx-auto container p-4">
+
+  <h1 class="text-center font-title uppercase mb-4 text-black">{{ title }}</h1>
+
+  <main class="mx-auto prose md:prose-xl lg:prose-2xl text-black" style="font-size: 100%;">
+    {{ content | safe }}
+  </main>
+
+</div>
+
+{% include 'partials/footer.njk' %}

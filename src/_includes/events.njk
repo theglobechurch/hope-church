@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+
+<header class="p-8 relative">
+  <div class="header-logo">
+    <a href="/">
+      Hope Church Vauxhall
+    </a>
+  </div>
+</header>
+
+<div class="mx-auto container p-4">
+
+  <h1 class="text-center font-title uppercase mb-4 text-black">{{ title }}</h1>
+
+  <div class="text-center mb-4">
+    <time datetime="{{ event.data.date }}" class="font-bold text-black">{{ event.data.date|readableDateTime }}</time>
+  </div>
+
+  <main class="mx-auto prose md:prose-xl lg:prose-2xl text-black" style="font-size: 100%;">
+    {{ content | safe }}
+
+    <div class="flex items-center justify-end">
+      {% if event.data.link %}
+        <a href="{{ event.data.link }}" class="text-white border-black border-2 p-4 text-center">Find out more</a>
+      {% endif %}
+    </div>
+  </main>
+
+</div>
+
+{% include 'partials/footer.njk' %}

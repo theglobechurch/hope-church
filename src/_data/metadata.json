@@ -1,0 +1,16 @@
+{
+  "homepage_menu": [
+    {
+      "link_text": "Who We Are",
+      "link_url": "#about"
+    },
+    {
+      "link_text": "Sundays",
+      "link_url": "#sunday"
+    },
+    {
+      "link_text": "Covid-19",
+      "link_url": "/hope-during-covid"
+    }
+  ]
+}

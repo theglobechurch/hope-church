@@ -22,17 +22,11 @@ eleventyExcludeFromCollections: true
 					<h1 class="animate-intro vauxhall">Vauxhall</h1>
 
 					<div class="more animate-intro">
-						<a class="smoothscroll button stroke" href="#about">
-							Who we are
+						{% for nav in metadata.homepage_menu %}
+						<a class="{% if nav.link_url[0] == '#'%}smoothscroll{% endif %} button stroke" href="{{ nav.link_url }}">
+							{{ nav.link_text }}
 						</a>
-
-						<a class="smoothscroll button stroke" href="#sunday">
-							Sundays
-						</a>
-
-						<a class="smoothscroll button stroke" href="#weekschedule">
-							What's going on
-						</a>
+						{% endfor %}
 					</div>
 
 				</div> <!-- end col-twelve -->
@@ -85,7 +79,7 @@ eleventyExcludeFromCollections: true
 		</div>
 
 		<div class="col-six tab-full">
-			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro mb-4" data-animate="fadeInRight"/>
+			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro mb-4" data-animate="fadeInRight" loading="lazy" />
 
 			{% if s.data.nextStep %}
 				<div class="more animate-intro pull-right">
@@ -124,12 +118,12 @@ eleventyExcludeFromCollections: true
 	<div class="row flexed">
 		<div class="col-six service-details tab-full">
 			<h2>Church Service</h2>
-			<ul>
+			<ul class="list-disc">
 				<li>Every Sunday</li>
 				<li>11am at Hope Church</li>
 				<li>105 Tyers Street, Vauxhall, SE11 5HS</li>
 			</ul>
-			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro map mb-4" data-animate="fadeInLeft"/>
+			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro map mb-4" data-animate="fadeInLeft" loading="lazy"/>
 			<div class="more animate-intro">
 				<a class="button stroke" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
 					Go to Map
@@ -200,7 +194,7 @@ eleventyExcludeFromCollections: true
 
 					{% if person.data.photo %}
 					<span class="icon">
-						<img src="{{ person.data.photo | replace('.jpg', '-sq-250.jpg')  }}" alt="{{ person.data.name }}" class="mx-auto" />
+						<img src="{{ person.data.photo | replace('.jpg', '-sq-250.jpg')  }}" alt="{{ person.data.name }}" class="mx-auto" loading="lazy" />
 					</span>
 					{% endif %}
 
