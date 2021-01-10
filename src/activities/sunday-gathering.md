@@ -1,6 +1,6 @@
 ---
 title: Hope Church Sunday Gathering
-time: 9:30am or 11:15am
+time: 11am on Facebook Live
 day: Sunday
 ---
 ![]()
