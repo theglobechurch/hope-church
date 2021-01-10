@@ -4,6 +4,8 @@
 
 This is site is based on Infinity template (CC-BY-3.0 details below). Everything was a bit rushed to get things together, so corners have been cut and good practices ignored. Optimistically someone will go back and rebuild this / throw away and start again.
 
+As this site doesn't seem to be going away it is in the process of roughly being migrated over to Eleventy + Tailwind with Netlify CMS behind it. Beware of the tech debt ahead.
+
 ## Dev:
 
 Simple server included:
@@ -11,9 +13,11 @@ Simple server included:
 `npm install`
 `npm run dev`
 
+Load from [localhost:8080](http://localhost:8080)
+
 To use the Netlify CMS in development you'll also need to run:
 
-`npx netlify-cms-proxy-server`
+`npm run cms`
 
 ## Production
 
