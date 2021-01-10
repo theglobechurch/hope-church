@@ -8,9 +8,9 @@ nextStep:
   - title: Rest of the week
     link: "#weekschedule"
 ---
-**During Covid-19 times we will be having two Socially distanced services. One at 9:30am and one at 11:15am. Both will be exactly the same, so come to either!** 
+**9th January 2020 - Due to the latest Covid-19 statitics in Lambeth and how unknown the new strain of the virus we have made the hard decison to not meet physically for the time being. We will instead be streaming the service on Facebook live at 11am.**
 
-![](/static/images/we-are-back.jpg)
+![]()
 
 **Everyone is welcome on Sundays – you don’t need to be a ‘good’ or ‘churchy’ person and you don’t need to wear anything special.**
 
