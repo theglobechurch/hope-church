@@ -8,7 +8,9 @@ nextStep:
   - title: Rest of the week
     link: "#weekschedule"
 ---
-**9th January 2020 - Due to the latest Covid-19 statitics in Lambeth and how unknown the new strain of the virus we have made the hard decison to not meet physically for the time being. We will instead be streaming the service on Facebook live at 11am.**
+**IMPORTANT NOTICE**
+
+**\*\***9th January 2020 - Due to the latest Covid-19 statitics in Lambeth and how unknown the new strain of the virus we have made the hard decison to not meet physically for the time being. We will instead be streaming the service on Facebook live at 11am*\*\*\*\***
 
 ![]()
 
