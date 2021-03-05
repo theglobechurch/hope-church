@@ -8,13 +8,6 @@ nextStep:
   - title: Rest of the week
     link: "#weekschedule"
 ---
-
-## IMPORTANT NOTICE
-
-_**9th January 2020** - Due to the latest Covid-19 statistics in Lambeth and how unknown the new strain of the virus we have made the hard decision to not meet physically for the time being. We will instead be streaming the service on Facebook live at 11am_
-
----
-
 **Everyone is welcome on Sundays – you don’t need to be a ‘good’ or ‘churchy’ person and you don’t need to wear anything special.**
 
 On Sundays we will always open the Bible and hear God speak to us through his word. We will talk a lot about Jesus – because we believe he is the real hope for Vauxhall. We will sing songs that praise God and we will talk to Him in prayer. We also learn amazing truths through rap! We love sharing food together and so we end our Sundays with a meal.
