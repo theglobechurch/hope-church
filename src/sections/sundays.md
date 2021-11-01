@@ -3,7 +3,7 @@ title: Sundays at Hope
 navtitle: Sundays
 leadimage: /static/images/estate-map.png
 nextStep:
-  - title: Catch up on the latest Hope Church Sermon Series
+  - title: Catch up on Sermons
     link: https://www.facebook.com/vauxhall105/videos/
   - title: Rest of the week
     link: "#weekschedule"
