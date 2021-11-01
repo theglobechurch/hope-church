@@ -18,4 +18,4 @@ We want Hope Church to be a place where people of all ages and from all backgrou
 
 Come and join us.
 
-You might be reading this and thinking, 'I want to know more about Jesus, the Bible or Christianity'. If that is you then one of the Hope Church Family would love to meet with you and do 'Urban Catechism'. To find out more about this click the link under the picture to the right that says Urban Catechism.
+***You might be reading this and thinking, 'I want to know more about Jesus, the Bible or Christianity'. If that is you then one of the Hope Church Family would love to meet with you and do 'Urban Catechism'. To find out more about this click the link under the picture to the right that says Urban Catechism.***
