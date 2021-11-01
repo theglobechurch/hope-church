@@ -8,7 +8,7 @@ nextStep:
   - title: What's On
     link: "#weekschedule"
   - title: Urban Catechism
-    link: https://hopevauxhall.co.uk/urban-catechism
+    link: /urban-catechism
 ---
 Although we meet in a place, Hope Church is really a group of people - a family devoted to God, to each other and to Vauxhall.
 
