@@ -4,7 +4,7 @@ navtitle: Hope Groups
 leadimage: /static/images/hope_groups_website.png
 nextStep:
   - title: What else is on?
-    link: /#weekschedule
+    link: "#weekschedule"
 ---
 W﻿e meet together in homes around the Vauxhall Estate every Wednesday evening to eat together and explore the bible together.
 
