@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
     "./src/static/images/*.svg": "./static/images",
     "./src/static/fonts": "./static/fonts",
     "./src/static/js": "./static/js",
+    "./src/humans.txt": "./humans.txt",
   });
 
   // Collections
