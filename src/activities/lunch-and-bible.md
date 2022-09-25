@@ -1,5 +1,5 @@
 ---
-title: Lunch and Bible Study (Just Re-started!)
+title: Lunch and Bible Study
 time: 1.00pm – 2.30pm
 day: Friday
 ---
