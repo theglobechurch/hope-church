@@ -84,7 +84,7 @@ eleventyExcludeFromCollections: true
 			{% if s.data.nextStep %}
 				<div class="more animate-intro pull-right">
 					{% for step in s.data.nextStep %}
-						<a class="smoothscroll button stroke" href="{{ step.link }}">
+						<a class="{% if step.link[0] == '#'%}smoothscroll {% endif %}button stroke" href="{{ step.link }}">
 							{{ step.title }}
 						</a>
 					{% endfor %}
@@ -138,7 +138,7 @@ eleventyExcludeFromCollections: true
 			{% if s.data.nextStep %}
 			<div class="more animate-intro">
 				{% for step in s.data.nextStep %}
-					<a class="smoothscroll button stroke" href="{{ step.link }}">
+					<a class="{% if step.link[0] == '#'%}smoothscroll {% endif %}button stroke" href="{{ step.link }}">
 						{{ step.title }}
 					</a>
 				{% endfor %}
