@@ -1,6 +1,6 @@
 ---
 title: Hope Groups
-navtitle: hopegroups
+navtitle: Hope Groups
 leadimage: /static/images/hope_groups_website.png
 nextStep:
   - title: What else is on?
