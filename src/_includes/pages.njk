@@ -2,10 +2,12 @@
 layout: base.njk
 ---
 
-<header class="p-8 relative">
-  <div class="header-logo">
-    <a href="/">
-      Hope Church Vauxhall
+{% include 'partials/nav.njk' %}
+
+<header class="p-8 relative inline-block w-[inherit]">
+  <div class="inline-block">
+    <a href="/" class="inline-block">
+      <img class="w-[100px]" src="/static/images/hope.svg" alt="Hope Church Vauxhall">
     </a>
   </div>
 </header>
@@ -21,3 +23,7 @@ layout: base.njk
 </div>
 
 {% include 'partials/footer.njk' %}
+
+<div id="preloader">
+	<div id="loader"></div>
+</div>

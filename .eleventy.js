@@ -1,5 +1,6 @@
 const collections = require("./utils/collections.js");
 const filters = require("./utils/filters.js");
+const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
@@ -19,7 +20,6 @@ module.exports = function (eleventyConfig) {
     "./src/static/images/*.svg": "./static/images",
     "./src/static/fonts": "./static/fonts",
     "./src/static/js": "./static/js",
-    "./_tmp/static/css/style.css": "./static/css/style.css",
   });
 
   // Collections
@@ -32,6 +32,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
+  eleventyConfig.addNunjucksAsyncShortcode("basicImg", shortcodes.basicImg);
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
@@ -40,7 +42,7 @@ module.exports = function (eleventyConfig) {
       data: "_data",
       includes: "_includes",
     },
-    templateFormats: ["html", "njk", "md", "11ty.js"],
+    templateFormats: ["html", "njk", "md"],
     htmlTemplateEngine: "njk",
   };
 };
