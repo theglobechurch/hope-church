@@ -9,6 +9,8 @@ nextStep:
     link: "#weekschedule"
   - title: Urban Catechism
     link: /urban-catechism
+  - title: Hope Groups
+    link: /mid-week-groups
 ---
 Although we meet in a place, Hope Church is really a group of people - a family devoted to God, to each other and to Vauxhall.
 
