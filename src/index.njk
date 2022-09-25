@@ -79,7 +79,7 @@ eleventyExcludeFromCollections: true
 		</div>
 
 		<div class="col-six tab-full">
-			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro mb-4" data-animate="fadeInRight" loading="lazy" />
+      {% basicImg s.data.leadimage, null, [250, 400, 1000], "animate-intro mb-4" %}
 
 			{% if s.data.nextStep %}
 				<div class="more animate-intro pull-right">
@@ -123,7 +123,7 @@ eleventyExcludeFromCollections: true
 				<li>11am at Hope Church</li>
 				<li>105 Tyers Street, Vauxhall, SE11 5HS</li>
 			</ul>
-			<img src="{{ s.data.leadimage }}" alt="" class="animate-intro map mb-4" data-animate="fadeInLeft" loading="lazy"/>
+      {% basicImg s.data.leadimage, null, [250, 400, 1000], "animate-intro map mb-4" %}
 			<div class="more animate-intro">
 				<a class="button stroke" href="https://goo.gl/maps/X2pwizqkHGD2" target="_blank" rel="noopener">
 					Go to Map
@@ -177,7 +177,7 @@ eleventyExcludeFromCollections: true
 	================================================== -->
 {% include 'partials/schedule.njk' %}
 
-<section id="testimonials" class="hope-section team">
+<section id="testimonials" class="hope-section">
 
 	<div class="row">
 		<div class="col-twelve">
@@ -193,9 +193,8 @@ eleventyExcludeFromCollections: true
 				<div class="bgrid service-item animate-this fadeInUp animated">
 
 					{% if person.data.photo %}
-					<span class="icon">
-						<img src="{{ person.data.photo | replace('.jpg', '-sq-250.jpg')  }}" alt="{{ person.data.name }}" class="mx-auto" loading="lazy" />
-					</span>
+            {% basicImg person.data.photo, person.data.name, [250], "mx-auto rounded-full mb-4" %}
+
 					{% endif %}
 
 					<div class="service-content">
