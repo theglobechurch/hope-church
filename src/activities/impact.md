@@ -1,6 +1,6 @@
 ---
-title: Impact (Currently not running)
-time: 4.15pm – 5.45pm (Boys and girls, years 1–6)
+title: Girls Club (New)
+time: 7pm – 9pm (Girls, years 8+)
 shortDesc: A Youth Group with games, food and Bible
-day: Tuesday
+day: Thursday
 ---
