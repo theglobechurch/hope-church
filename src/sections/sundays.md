@@ -4,7 +4,7 @@ navtitle: Sundays
 leadimage: /static/images/estate-map.png
 nextStep:
   - title: Catch up on Sermons
-    link: https://www.facebook.com/vauxhall105/videos/
+    link: https://drive.google.com/drive/folders/10d4AkWe2WXlZc5z7YkaqbsP10uIyxFqv?usp=sharing
   - title: Rest of the week
     link: "#weekschedule"
 ---
