@@ -1,10 +1,12 @@
 ---
 name: Shane Goodyear
 photo: /static/images/shane.jpg
-shortBio: Shane was brought up on a council estate in South London and became a
-  Christian after a colleague refused to stop talking to him about Jesus. Shane
-  looks after our Football project and our youth group for teenage boys. He is
-  married to Jaz and they have two children. For some reason he supports
-  Arsenal.
+shortBio: Shane is one of the Minsters at Hope Church Vauxhall. He seeks to
+  witness about Christ's life, death and resurrection to people of all
+  backgrounds who come from and live on council estates such as the Vauxhall
+  Gardens Estate. Shane is passionate in training Christians to share their
+  faith with others, and wants to disciple people from estates with the
+  knowledge and love of Christ. He is married to Jaz and they have four
+  children. For some reason, he supports Arsenal.
 sortOrder: null
 ---
