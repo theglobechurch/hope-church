@@ -7,6 +7,4 @@ A 'catechism' is a way of teaching things through questions and answers. Christi
 
 If you would like to find out more about Christianity and what the Bible teaches, someone from the Hope family would love to meet up and go through the Urban Catechism with you. 
 
-For more information, contact emily@hopevauxhall.co.uk 
-
-[](mailto:info@hopevauxhall.co.uk)
+For more information, contact info@hopevauxhall.co.uk [](mailto:info@hopevauxhall.co.uk)
