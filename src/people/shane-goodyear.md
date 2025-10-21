@@ -1,7 +1,7 @@
 ---
 name: Shane Goodyear
 photo: /static/images/shane.jpg
-shortBio: Shane is one of the Minsters at Hope Church Vauxhall. He seeks to
+shortBio: Shane is one of the Elders at Hope Church Vauxhall. He seeks to
   witness about Christ's life, death and resurrection to people of all
   backgrounds who come from and live on council estates such as the Vauxhall
   Gardens Estate. Shane is passionate in training Christians to share their
