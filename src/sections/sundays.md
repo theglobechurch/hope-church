@@ -4,7 +4,7 @@ navtitle: Sundays
 leadimage: /static/images/estate-map.png
 nextStep:
   - title: Catch up on Sermons
-    link: https://drive.google.com/drive/folders/10d4AkWe2WXlZc5z7YkaqbsP10uIyxFqv?usp=sharing
+    link: https://open.spotify.com/show/0jw492IBGAPCtSETdRXRWv
   - title: Rest of the week
     link: "#weekschedule"
 ---
