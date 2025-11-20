@@ -1,7 +1,7 @@
 ---
 title: Welcome
 navtitle: Welcome
-leadimage: /static/images/hope-fam-2.jpg
+leadimage: /static/images/whatsapp-image-2025-11-20-at-12.29.00.jpeg
 nextStep:
   - title: The vision
     link: "#vision"
