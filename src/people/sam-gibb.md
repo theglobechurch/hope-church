@@ -1,5 +1,5 @@
 ---
-name: Sam Gibb
+name: Sam
 photo: /static/images/sam.jpg
 shortBio: Sam is the Pastor and Church planter of Hope Church Vauxhall. He was
   born in Wandsworth, moved to the Midlands, fell in love with a northerner (his
