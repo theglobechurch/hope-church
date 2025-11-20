@@ -1,5 +1,5 @@
 ---
-name: Kev Croft
+name: Kev
 photo: /static/images/kev.jpg
 shortBio: "Kev is one of the Elders at Hope Church Vauxhall and the London City
   Mission Team Leader for Lambeth. He’s a proper South Londoner, a
