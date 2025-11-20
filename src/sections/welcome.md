@@ -1,7 +1,7 @@
 ---
 title: Welcome
 navtitle: Welcome
-leadimage: /static/images/2025.png
+leadimage: /static/images/2025-1-.png
 nextStep:
   - title: The vision
     link: "#vision"
