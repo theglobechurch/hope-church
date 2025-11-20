@@ -1,5 +1,5 @@
 ---
-name: Shane Goodyear
+name: Shane
 photo: /static/images/shane.jpg
 shortBio: Shane is one of the Elders at Hope Church Vauxhall. He seeks to
   witness about Christ's life, death and resurrection to people of all
