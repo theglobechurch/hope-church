@@ -9,6 +9,8 @@ nextStep:
     link: "#weekschedule"
   - title: Hope Groups
     link: /hope-groups
+  - title: Giving
+    link: /giving
 ---
 Although we meet in a place, Hope Church is really a group of people - a family devoted to God, to each other and to Vauxhall.
 
