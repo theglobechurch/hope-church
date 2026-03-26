@@ -3,7 +3,7 @@ title: Welcome
 navtitle: Welcome
 leadimage: /static/images/2025-1-.png
 nextStep:
-  - title: The vision
+  - title: The Vision
     link: "#vision"
   - title: What's On
     link: "#weekschedule"
