@@ -1,14 +1,25 @@
 ---
 title: "Giving "
 ---
-If you would live to give to Hope church there are a number of ways you can do so
+# **GIVING TO HOPE CHURCH**
 
-**By Bank Transfer/Standing order**
-Our preference is to give directly to our bank via bank transfer, either as a one-off payment or by setting up a standing order to the bank details below:
-Hope Church Vauxhall 
-Sort code: 51-50-03 
-Account number: 75035200 
-*Reference: If you are making the donation for the Ethelred Church Plant then please put the reference as "Ethelred".* 
+If you would like to give financially to Hope Church or support the Ethelred Church Plant, you can do so in the following ways:
 
-**Via GoCardless through ChurchSuite**
+ **1. Bank Transfer / Standing Order (Preferred)**
+You can give directly via bank transfer, either as a one-off payment or by setting up a standing order.
+
+Account Name: Hope Church Vauxhall
+Sort Code: 51-50-03
+Account number for Hope Church: 75035200
+Account number for Ethelred Church Plant: 75107635
+
+**2. Online Giving (GoCardless via ChurchSuite)**
+You can also give online using GoCardless:
 https://hopevauxhall.churchsuite.com/donate/
+
+**Gift Aid**
+If you are a UK taxpayer, please complete a Gift Aid form. This allows us to claim an extra 25p for every £1 you give, at no additional cost to you.
+
+**Need Help?**
+If you have any questions or need more information, please contact us:
+info@hopevauxhall.co.uk
