@@ -14,13 +14,11 @@ Account number for Hope Church: 75035200
 Account number for Ethelred Church Plant: 75107635
 
 **2. Online Giving (GoCardless via ChurchSuite)**
-You can also give online using GoCardless:
-https://hopevauxhall.churchsuite.com/donate/
+You can also give online using GoCardless by clicking [here ](https://hopevauxhall.churchsuite.com/donate/)
+
 
 **Gift Aid**
-If you are a UK taxpayer, please complete a Gift Aid form. This allows us to claim an extra 25p for every £1 you give, at no additional cost to you.
-
-https://forms.office.com/e/15x66zpS5U
+If you are a UK taxpayer, please complete our **[Gift Aid form](https://forms.office.com/e/15x66zpS5U)**. This allows us to claim an extra 25p for every £1 you give, at no additional cost to you.
 
 **Need Help?**
 If you have any questions or need more information, please contact us:
